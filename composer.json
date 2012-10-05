@@ -1,0 +1,17 @@
+{
+    "name": "obiz/challenges",
+    "description": "A collection of programming challenges created for new job candidates at Obiz",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.1"
+    },
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Daniel Ribeiro",
+            "email": "drgomesp@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
