@@ -48,7 +48,7 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider validWithdrawProvider
      */
-    public function testShouldReturnMinimumAmountBillsForValidWithdraw(
+    public function testShouldReturnMinimumAmountOfBillsForValidWithdraw(
         $withdrawAmount, $expectedBills)
     {
         $cashDistributor = new CashDistributor();
