@@ -12,7 +12,7 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
             'Class not found: ' . $class
         );
 
-        $this->assertClassHasAttribute('bills', 
+        $this->assertClassHasAttribute('availableBills', 
             'Obiz\Challenges\CashMachine\CashDistributor');
 
         $this->assertTrue(
@@ -34,7 +34,13 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
     public function validWithdrawProvider()
     {
         return array(
+            array(2, array(2 => 1)),
             array(4, array(2 => 2)),
+            array(7, array(5 => 1, 2 => 1)),
+            array(9, array(5 => 1, 2 => 2)),
+            array(11, array(5 => 1, 2 => 3)),
+            array(13, array(5 => 1, 2 => 4)),
+            array(23, array(10 => 1, 5 => 1, 2 => 4)),
         );
     }
 
@@ -43,6 +49,16 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
         $cashDistributor = new CashDistributor();
         $this->assertInstanceOf(
             'Obiz\Challenges\CashMachine\CashDistributor', $cashDistributor);
+    }
+
+    /**
+     * @dataProvider invalidWithdrawProvider
+     * @expectedException Obiz\Challenges\CashMachine\InvalidWithdrawException
+     */
+    public function testShouldThrowExceptionForInvalidWithdraw($withdrawAmount)
+    {
+        $cashDistributor = new CashDistributor();
+        $returnedBills = $cashDistributor->getMinimalAmountOfBills($withdrawAmount);
     }
 
     /**
@@ -62,14 +78,5 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
         
         $this->assertEquals($expectedBills, $returnedBills,
             "Invalid bill distribution for the given value ($withdrawAmount):");
-    }
-
-    /**
-     * @dataProvider invalidWithdrawProvider
-     * @expectedException Obiz\Challenges\CashMachine\InvalidWithdrawException
-     */
-    public function testShouldThrowExceptionForInvalidWithdraw()
-    {
-
     }
 }
