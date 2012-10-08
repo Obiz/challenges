@@ -4,7 +4,10 @@ namespace Obiz\Challenges\CashMachine;
 
 class CashDistributor
 {
-	private $bills = array(2, 5, 10, 20, 50, 100);
+	/**
+	 * @var array
+	 */
+	private $availableBills = array(2, 5, 10, 20, 50, 100);
 
 	/**
 	 * 
@@ -15,5 +18,6 @@ class CashDistributor
 	 */
 	public function getMinimalAmountOfBills($withdrawAmount)
 	{
+		// code goes here
 	}
 }
