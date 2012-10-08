@@ -12,6 +12,6 @@
         "psr-0": {"Obiz\\Challenges": "src/"}
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.4"
+        "phpunit/phpunit": "3.7.*"
     }
 }
