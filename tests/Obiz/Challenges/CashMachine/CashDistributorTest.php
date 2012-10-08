@@ -8,12 +8,12 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertTrue(
             class_exists(
-                $class = 'Obiz\Challenges\CashMachine\CashDistributorJulio'),
+                $class = 'Obiz\Challenges\CashMachine\CashDistributor'),
             'Class not found: ' . $class
         );
 
         $this->assertClassHasAttribute('availableBills',
-            'Obiz\Challenges\CashMachine\CashDistributorJulio');
+            'Obiz\Challenges\CashMachine\CashDistributor');
 
         $this->assertTrue(
             class_exists(
@@ -68,9 +68,9 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
 
     public function testShouldInstantiateWithoutArguments()
     {
-        $cashDistributor = new CashDistributorJulio();
+        $cashDistributor = new CashDistributor();
         $this->assertInstanceOf(
-            'Obiz\Challenges\CashMachine\CashDistributorJulio', $cashDistributor);
+            'Obiz\Challenges\CashMachine\CashDistributor', $cashDistributor);
     }
 
     /**
@@ -79,7 +79,7 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
      */
     public function testShouldThrowExceptionForInvalidWithdraw($withdrawAmount)
     {
-        $cashDistributor = new CashDistributorJulio();
+        $cashDistributor = new CashDistributor();
         $returnedBills = $cashDistributor->getMinimalAmountOfBills($withdrawAmount);
     }
 
@@ -89,7 +89,7 @@ class CashDistributorTest extends \PHPUnit_Framework_TestCase
     public function testShouldReturnMinimumAmountOfBillsForValidWithdraw(
         $withdrawAmount, $expectedBills)
     {
-        $cashDistributor = new CashDistributorJulio();
+        $cashDistributor = new CashDistributor();
 
         try {
             $returnedBills =
