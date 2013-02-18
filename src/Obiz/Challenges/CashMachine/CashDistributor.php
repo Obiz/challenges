@@ -7,7 +7,7 @@ class CashDistributor
     /**
      * @var array
      */
-     private $availableBills = array(2, 5, 10, 20, 50, 100);
+    private $availableBills = array(2, 5, 10, 20, 50, 100);
      
     /**
      * Returns the bills that should be distributed for a given withdraw amount and available bills,
