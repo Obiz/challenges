@@ -4,12 +4,12 @@ namespace Obiz\Challenges\CashMachine;
 
 class CashDistributor
 {
-	/**
-	 * @var array
-	 */
-	private $availableBills = array(2, 5, 10, 20, 50, 100);
-
-	/**
+    /**
+     * @var array
+     */
+     private $availableBills = array(2, 5, 10, 20, 50, 100);
+     
+    /**
      * Returns the bills that should be distributed for a given withdraw amount and available bills,
      * MINIMIZING the total number of distributed bills.
      * Ex: getBills(72) => array(2 => 1, 20 => 1, 50 => 1).
@@ -18,8 +18,8 @@ class CashDistributor
      * @throws InvalidWithdrawException if the exact amount cannot be gathered with the available bills.
      * @return array Associative array representing the bills that should be distributed by the cash machine.
      */
-	public function getMinimalAmountOfBills($withdrawAmount)
-	{
-		// code goes here
-	}
+    public function getMinimalAmountOfBills($withdrawAmount)
+    {
+        // code goes here
+    }
 }
