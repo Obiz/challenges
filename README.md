@@ -1,7 +1,8 @@
 #Introduction
 
-If you are here, you have probably applied for a job at Obiz and have received the name of a challenge to take.
-The challenges support code is in the `src` folder. 
+If you are here, you have probably applied for a job at Obiz and have received the name of a challenge to take. Be welcome!
+
+The challenges code is in the `src` folder. The instructions are written as function comments inside the class templates.
 
 #Run the unit tests
 
