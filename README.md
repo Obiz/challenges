@@ -22,4 +22,4 @@ Install the project dependencies
 
 Run the tests for a specific challenge
 
-`./vendor/bin/phpunit tests/Obiz/Challenges/CashMachine'
+`./vendor/bin/phpunit tests/Obiz/Challenges/CashMachine`
