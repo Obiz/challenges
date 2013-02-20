@@ -20,6 +20,6 @@ class CashDistributor
      */
     public function getMinimalAmountOfBills($withdrawAmount)
     {
-        // code goes here
+        // Write your code here. Feel free to create any other functions of classes you need.
     }
 }
