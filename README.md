@@ -18,7 +18,7 @@ Download composer
 
 Install the project dependencies
 
-`composer.phar install --dev`
+`composer.phar install --dev --prefer-dist`
 
 Run the tests for a specific challenge
 
