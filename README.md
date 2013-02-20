@@ -1,5 +1,9 @@
+#Introduction
+
 If you are here, you have probably applied for a job at Obiz and have received the name of a challenge to take.
 The challenges support code is in the `src` folder. 
+
+#Run the unit tests
 
 In case you are not familiar with github or composer and want to run the tests against your code, here are the necessary steps.
 
