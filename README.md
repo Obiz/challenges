@@ -14,11 +14,11 @@ Clone the project to your computer
 
 Download composer
 
-`curl -ks http://getcomposer.org/installer | php`
+`curl -sS https://getcomposer.org/installer | php`
 
 Install the project dependencies
 
-`composer.phar install --dev --prefer-dist`
+`composer.phar install --prefer-dist`
 
 Run the tests for a specific challenge
 
