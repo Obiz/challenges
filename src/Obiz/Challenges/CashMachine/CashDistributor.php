@@ -8,7 +8,7 @@ class CashDistributor
      * @var array
      */
     private $availableBills = array(2, 5, 10, 20, 50, 100);
-     
+
     /**
      * Returns the bills that should be distributed for a given withdraw amount and available bills,
      * MINIMIZING the total number of distributed bills.
@@ -21,5 +21,6 @@ class CashDistributor
     public function getMinimalAmountOfBills($withdrawAmount)
     {
         // Write your code here. Feel free to create any other functions or classes you need.
+        return array();
     }
 }
